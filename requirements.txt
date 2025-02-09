@@ -1,0 +1,5 @@
+dash==2.18.2
+dash-bootstrap-components==1.6.0
+pymupdf==1.25.1
+Pillow==11.0.0
+gunicorn==23.0.0
