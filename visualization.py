@@ -462,7 +462,7 @@ def display_page_content(page_num, paper):
         doc = fitz.open(file_path)
         # PyMuPDF uses 0-indexed pages; adjust accordingly.
         page = doc.load_page(page_num - 1)
-        pix = page.get_pixmap(dpi=300)
+        pix = page.get_pixmap(dpi=200)
         img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
         buffer = BytesIO()
         img.save(buffer, format="PNG")
